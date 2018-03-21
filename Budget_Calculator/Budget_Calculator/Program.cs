@@ -19,34 +19,38 @@ namespace Budget_Calculator
             {
                 var billMaker = new BillMaker();
                 var jsonMaker = new JsonMaker();
+                var counter = new Counter();
 
-                
+
                 Console.WriteLine("1.Dodaj paragon");
-                Console.WriteLine("2.Exit");
+                Console.WriteLine("2.Podsumowanie miesiąca");
+
+
+
+                Console.WriteLine("100.Exit");
 
                 Console.WriteLine("Opcja: ");
 
                 var choice = Console.ReadLine();
-                if (choice == "2")
-                {
-                    //Application.Terminate(); 
-                    Console.WriteLine("dziaba dziaba");
-                }
-                else
-                {
-                    switch (choice)
-                    {
-                        case "1":
 
-                            var jfile = jsonMaker.MakeJson();
-                            break;
+                switch (choice)
+                {
+                    case "1":
 
-                        default:
-                            Console.WriteLine("Nie ma takiej opcji");
-                           
-                            break;
-                    }
+                        var jfile = jsonMaker.MakeJson();
+                        break;
+                    case "2":
+                        var cou = counter.MakeMonthlyCount();
+                        break;
+                    case "100":
+                        //Application.Terminate(); 
+                        break;
+
+                    default:
+                        Console.WriteLine("Nie ma takiej opcji");
+                        break;
                 }
+
             } while (true);
 
             {

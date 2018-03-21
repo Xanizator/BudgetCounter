@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BillMaker.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="JsonMaker.cs" />
     <Compile Include="Produkt.cs" />
     <Compile Include="Program.cs" />

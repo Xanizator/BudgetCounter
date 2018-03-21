@@ -7,10 +7,13 @@ using System.IO;
 namespace Budget_Calculator
 {
     public class JsonMaker
+
     {
+        string data = DateTime.Now.ToString("MMMM");
+        string sciezkaDoPliku = Path.Combine(Environment.CurrentDirectory, @"Paragon", DateTime.Now.ToString("MMMM") + " " + DateTime.Now.ToString("yyyy") + ".json");
+
         public int MakeJson()
         {
-            string data = DateTime.Now.ToString("MMMM");
             string potwierdzenie;
 
             var paragon = new BillMaker();
@@ -28,7 +31,7 @@ namespace Budget_Calculator
             {
 
                 // Zapis JSON do pliku na dysku/ else aktualizacja
-                var sciezkaDoPliku = @"e:\paragon_" + data + ".json";
+
 
                 if (!File.Exists(sciezkaDoPliku))
                 {
@@ -39,14 +42,10 @@ namespace Budget_Calculator
                     File.WriteAllText(sciezkaDoPliku, jsonParagonu);
 
                 }
-                
+
                 else
                 {
-                    // Wczytaj z istniejącego pliku
-                    var czystyJson = File.ReadAllText(sciezkaDoPliku);
-
-                    // Zamiana stringa z pliku na obiekt
-                    var paragonZPliku = JsonConvert.DeserializeObject<List<Produkt>>(czystyJson);
+                    var paragonZPliku = JsonReader(sciezkaDoPliku);
 
                     // Dodanie nowego paragonu do starego
                     paragonZPliku.AddRange(paragon2);
@@ -58,13 +57,24 @@ namespace Budget_Calculator
                     File.WriteAllText(sciezkaDoPliku, jsonParagonu);
                 }
                 return 0;
-                
+
             }
-            
-            else if (potwierdzenie == "nie");
+
+            else if (potwierdzenie == "nie") ;
             {
                 return 0;
             }
+        }
+
+        public List<Produkt> JsonReader(string sciezka)
+        {
+            // Wczytaj z istniejącego pliku
+             var czystyJson = File.ReadAllText(sciezka);
+
+            // Zamiana stringa z pliku na obiekt
+            var paragonZPliku = JsonConvert.DeserializeObject<List<Produkt>>(czystyJson);
+            Console.WriteLine(czystyJson);
+            return paragonZPliku;
         }
     }
 }

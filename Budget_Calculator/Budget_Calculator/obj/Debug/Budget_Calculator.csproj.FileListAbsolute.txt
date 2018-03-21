@@ -9,3 +9,8 @@ E:\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.pdb
 C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.exe.config
 C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.exe
 C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.pdb
+C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.exe
+C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.pdb
+C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Michałek\Documents\Visual Studio 2015\Projects\BC\Budget_Calculator\Budget_Calculator\bin\Debug\Newtonsoft.Json.xml
