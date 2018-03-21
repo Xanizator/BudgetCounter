@@ -1,0 +1,8 @@
+E:\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.csprojResolveAssemblyReference.cache
+E:\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.exe.config
+E:\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.exe
+E:\Budget_Calculator\Budget_Calculator\bin\Debug\Budget_Calculator.pdb
+E:\Budget_Calculator\Budget_Calculator\bin\Debug\Newtonsoft.Json.dll
+E:\Budget_Calculator\Budget_Calculator\bin\Debug\Newtonsoft.Json.xml
+E:\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.exe
+E:\Budget_Calculator\Budget_Calculator\obj\Debug\Budget_Calculator.pdb
