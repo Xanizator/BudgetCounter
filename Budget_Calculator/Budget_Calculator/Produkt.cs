@@ -4,5 +4,9 @@
     {
             public string Nazwa;
             public string Cena;
+                public void Dziaba()
+             {
+            System.Console.WriteLine("dziab");
+        }
     }
 }

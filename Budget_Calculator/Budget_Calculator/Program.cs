@@ -29,7 +29,8 @@ namespace Budget_Calculator
                 var choice = Console.ReadLine();
                 if (choice == "2")
                 {
-                    //Application.Terminate();
+                    //Application.Terminate(); 
+                    Console.WriteLine("dziaba dziaba");
                 }
                 else
                 {
@@ -42,6 +43,7 @@ namespace Budget_Calculator
 
                         default:
                             Console.WriteLine("Nie ma takiej opcji");
+                           
                             break;
                     }
                 }
